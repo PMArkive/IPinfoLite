@@ -43,12 +43,11 @@ jobs:
     steps:
     - name: Download lite databases
       run: |
-        wget -nv -O- "https://ipinfo.io/data/ipinfo_lite.mmdb?token=${{ secrets.LICENSE_KEY }}"
-        wget -nv -O- "https://ipinfo.io/data/ipinfo_lite.parquet?token=${{ secrets.LICENSE_KEY }}"
-        wget -nv -O- "https://ipinfo.io/data/ipinfo_lite.csv.gz?token=${{ secrets.LICENSE_KEY }}"
-        wget -nv -O- "https://ipinfo.io/data/ipinfo_lite.json.gz?token=${{ secrets.LICENSE_KEY }}"
-        mkdir -p upload
-        cp -v ipinfo_lite* upload
+        mkdir upload && cd upload
+        wget --no-verbose --content-disposition "https://ipinfo.io/data/ipinfo_lite.mmdb?token=${{ secrets.LICENSE_KEY }}"
+        wget --no-verbose --content-disposition "https://ipinfo.io/data/ipinfo_lite.parquet?token=${{ secrets.LICENSE_KEY }}"
+        wget --no-verbose --content-disposition "https://ipinfo.io/data/ipinfo_lite.csv.gz?token=${{ secrets.LICENSE_KEY }}"
+        wget --no-verbose --content-disposition "https://ipinfo.io/data/ipinfo_lite.json.gz?token=${{ secrets.LICENSE_KEY }}"
         echo "TAG_NAME=$(date +"%Y.%m.%d")" >> $GITHUB_ENV
 
     - name: Upload to Releases
