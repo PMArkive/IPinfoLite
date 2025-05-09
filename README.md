@@ -1,24 +1,18 @@
-# GeoLite.mmdb
+# IPinfo Lite
 
-[MaxMind's GeoLite2](https://dev.maxmind.com/geoip/geoip2/geolite2/) Country, City, and ASN databases
+[IPinfo.io's Lite](https://ipinfo.io/developers/ipinfo-lite-database) ASN and country database.
 
 ## Download
 
-### URL1
-
-- [GeoLite2-ASN.mmdb](https://git.io/GeoLite2-ASN.mmdb)
-- [GeoLite2-City.mmdb](https://git.io/GeoLite2-City.mmdb)
-- [GeoLite2-Country.mmdb](https://git.io/GeoLite2-Country.mmdb)
-
-### URL2
-
-- [GeoLite2-ASN.mmdb](https://github.com/P3TERX/GeoLite.mmdb/raw/download/GeoLite2-ASN.mmdb)
-- [GeoLite2-City.mmdb](https://github.com/P3TERX/GeoLite.mmdb/raw/download/GeoLite2-City.mmdb)
-- [GeoLite2-Country.mmdb](https://github.com/P3TERX/GeoLite.mmdb/raw/download/GeoLite2-Country.mmdb)
+- [ipinfo_lite.mmdb](https://github.com/PMArkive/IPinfoLite/releases/latest/download/ipinfo_lite.mmdb)
+- [ipinfo_lite.parquet](https://github.com/PMArkive/IPinfoLite/releases/latest/download/ipinfo_lite.parquet)
+- [ipinfo_lite.csv.gz](https://github.com/PMArkive/IPinfoLite/releases/latest/download/ipinfo_lite.csv.gz)
+- [ipinfo_lite.json.gz](https://github.com/PMArkive/IPinfoLite/releases/latest/download/ipinfo_lite.json.gz)
 
 ## License
 
-- Database and Contents Copyright (c) [MaxMind](https://www.maxmind.com/), Inc.
-- [GeoLite2 End User License Agreement](https://www.maxmind.com/en/geolite2/eula)
-- [Creative Commons Corporation Attribution-ShareAlike 4.0 International License (the "Creative Commons License")](https://creativecommons.org/licenses/by-sa/4.0/)
+- Database and Contents Copyright (c) [IPinfo](https://ipinfo.io/) Inc.
+- [Creative Commons Attribution-ShareAlike 4.0 International License (the "Creative Commons License")](https://creativecommons.org/licenses/by-sa/4.0/)
 
+## Note
+This is a detached fork of https://github.com/P3TERX/GeoLite.mmdb
